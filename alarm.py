@@ -1,6 +1,4 @@
-from dis import Instruction
 import os
-from distutils import command
 import time
 import winsound
 import pyttsx3
@@ -71,7 +69,7 @@ print("log updated")
 today = date.today()
 d = today.strftime("%b-%d-%Y")
 # if you want to print today's date : print("d4 =", d4)
-f = open("d:\\nikhil python\\alarm_log\\alarms.txt","w")
+f = open("alarm_log\\alarms.txt","w")  #alarm log file address.
 f.write(str(hour))
 f.write(":")
 f.write(str(min))
@@ -96,10 +94,4 @@ while(True):
         winsound.Beep(2000 , 5000)
     clear()
 
-
-
-
-'''while(1):
-    if int(time.strftime("%H")) == hour and  int(time.strftime("%M")) == min and int(time.strftime("%S")) == sec:
-        winsound.Beep(2000 , 5000)'''
       
